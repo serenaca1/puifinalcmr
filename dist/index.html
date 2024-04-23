@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMR 24E</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="pagetext.js" defer ></script>
+    <script src="circles.js" defer ></script>
+
+</head>
+<script type="module" src="./script.js"></script>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<header>
+    <div class="container-fluid mt-3">
+        <div class="row align-items-center">
+            <div class="col-sm-3 ">
+                <span id="title" style="float:left;">CMR 24E </span>
+            </div>
+            <div class="col-sm-6 ">
+                <img id="logo" src="public/CMRlogo.svg" alt = "CMR logo"/>
+            </div>
+            <div class="col-sm-3 ">
+                <span id="title" style="float:right;">Carnegie Mellon Racing</span>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center mt-2">
+ 
+            <span id = "left"><img src="public/left.svg"/></span>
+            <span id="carscene"></span>
+            <span id = "right"><img src="public/right.svg"/></span>
+
+        </div>
+        <div class="row textrow align-items-center">
+            <div id = "back"></div>
+            <div class="col"><img id="backbutton" src="public/arrows.svg" alt = "back button"/></div>
+            
+                <div class="col-sm-7 txtbox">
+                    <div>
+                        <span id = "tts"><img id="speakerimg" src="public/volume on.svg" alt = "volume on button"/></span>
+                        <span class="headingtop" id="heading"> 24E INFORMATION</span>
+                    </div>
+                    <div id="bodytxt">Learn more about 24E.</div> 
+                </div> 
+                <div class="col"><img id="nextbutton" src="public/arrows.svg" alt = "next button"/></div>
+ 
+        </div>
+        <div class="row justify-content-center mt-1" id="circles">
+        </div>
+        <div id="backcar"></div>
+        <div id="exitcar"></div>
+             
+    </div>
+
+</header>
+
+
+</body>
+
+</html>

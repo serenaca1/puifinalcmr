@@ -1,0 +1,287 @@
+@font-face {
+    font-family: NotoSansMono;
+    src: url("./public/NotoSansMono_SemiCondensed-Regular.ttf") format('truetype');
+    font-weight:normal;
+    font-style:normal;  
+}
+
+@font-face {
+    font-family: Adon;
+    src: url("./public/Adon Bold.otf") format('opentype');
+    font-weight:bold;
+    font-style:bold;  
+}
+
+body{
+    background-color: #131416 !important;
+
+}
+.container-fluid{
+    max-width: 70% !important;
+}
+
+.border-car{
+    border:0.5px solid !important; 
+    border-color: #dcdcdc !important;
+}
+
+
+#speakerimg{
+    display:inline-block;
+    width:2vw;
+}
+#carscene{
+    margin-left:auto;
+    margin-right:auto;
+}
+.txtbox{
+    padding:10px;
+    display: block;
+    margin-top: -5%;
+    margin-left: auto;
+    margin-right: auto;
+    height:20vh;
+    width:65%;
+    backdrop-filter: blur(5px);
+    background-color: #131416;
+    opacity:80%;
+    border:0.5px solid;
+    border-color:#dcdcdc;
+
+}
+#carbutton{
+    display:block;
+    color:#dcdcdc;
+    position:absolute;
+    left:100px;
+    top:200px;
+}
+canvas{
+    height:0;
+    border: 0.5px solid;
+    border-color: #dcdcdc;
+}
+
+#back{
+    position: absolute;
+    margin-top: -20%;
+    left:48%;
+    display:inline-block;
+    z-index: 100;
+    width:3vw;
+}
+#pressbutton{
+    background :"red";
+    color: #dcdcdc;
+    top:0px;
+    left:0px;
+}
+
+#left{
+    width:8%;
+    margin-left: -8%;
+    vertical-align: middle;
+}
+#right{
+    width:8%;
+    margin-right: -8%;
+}
+.minibox{
+    position:absolute;
+    top:5%;
+    left:2%;
+    text-transform: uppercase;
+
+}
+#tts{
+    width:2vw;
+}
+
+#exitcar{
+    color:pink;
+}
+#nobggrey{
+
+    font-family: NotoSansMono;
+    color:#dcdcdc;
+    font-size: 1vw;
+    text-transform: uppercase;
+    line-height: 1.0;
+    margin-bottom: 5%;
+}
+#bggrey{
+
+    font-family: NotoSansMono;
+    color:black;
+    border: 2px;
+    border-style: solid;
+    border-color: #dcdcdc;
+    background-color: #dcdcdc;
+    font-size: 1vw;
+    text-transform: uppercase;
+    line-height: 1.0;
+    margin-bottom: 5%;
+    margin-right:2px;
+    padding:2px;
+
+}
+#test{
+    position: absolute;
+    top: 121px;
+    left: 2758px;
+    color:#dcdcdc;
+}
+
+#number {
+    position: absolute;
+    z-index: -1;
+}
+
+#heading{
+    display:inline-block;
+    color:#da0722;
+    text-transform: uppercase;
+}
+.headingtop{
+    font-family: Adon;
+    font-weight: bold;
+    font-size: 1.2vw;
+    line-height: 0.9;
+}
+.nexttxt{
+    display:inline-block;
+    font-family: NotoSansMono;
+    font-size: 1.1vw;
+}
+.textrow{
+    display:flex;
+    flex-wrap:wrap;
+    row-gap:10px;
+    column-gap: 10px;
+}
+#nextbutton{
+    float:left; 
+    margin-top: -25%;
+    width:10%;
+}
+#backbutton{
+    float:right;
+    margin-top: -25%;
+    transform: rotate(180deg);
+    width:10%;
+    
+}
+.rectangle1 {
+    margin-top:3px;
+    height: .25vw;
+    width: 100%;
+    background-color: #da0722;
+  }
+  .rectangle2 {
+    margin-top:2px;
+    height: .1vw;
+    width: 100%;
+    background-color: #da0722;
+  }
+#setred{
+    color:#da0722;
+}
+#logo{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height:2vw;
+}
+#title{
+    font-family: Adon;
+    font-weight: bold;
+    color:#dcdcdc;
+    font-size: 0.6vw;
+    letter-spacing: 1.2px;
+    line-height: 0.9;
+    text-transform: uppercase; 
+    vertical-align: middle;
+
+}
+#bodytxt{
+    font-family: NotoSansMono;
+    color:#dcdcdc;
+    font-size: 0.7vw;
+    line-height: 1.1;
+
+}
+
+.dot {
+    display:inline-block;
+    width:2%;
+    margin-right: 1%;
+  
+  }
+
+
+  @media only screen and (max-width: 1370px) {
+    .container-fluid {
+      max-width: 100% !important;
+    }
+    #left{
+        position: absolute;
+        width:8%;
+        top:45%;
+        left:15%;
+        vertical-align: middle;
+    }
+    #right{
+        position: absolute;
+        width:8%;
+        top:45%;
+        right:15%;       
+    }
+    .textrow{
+        margin-top: -15%;
+        display:flex;
+        flex-wrap:wrap;
+        row-gap:10px;
+        column-gap: 10px;
+    }
+    #bodytxt{
+        font-family: NotoSansMono;
+        color:#dcdcdc;
+        font-size: 1vw;
+        line-height: 1.1;
+    
+    }
+    #back{
+        position: absolute;
+        margin-top: -30%;
+        left:48%;
+        display:inline-block;
+        z-index: 100;
+        width:5vw;
+    }
+    #nextbutton{
+        float:left; 
+        margin-top: -25%;
+        width:15%;
+    }
+    #backbutton{
+        float:right;
+        margin-top: -25%;
+        transform: rotate(180deg);
+        width:15%;
+        
+    }
+    #title{
+        font-family: Adon;
+        font-weight: bold;
+        color:#dcdcdc;
+        font-size: 1vw;
+        letter-spacing: 1.2px;
+        line-height: 0.9;
+        text-transform: uppercase; 
+        vertical-align: middle;
+    
+    }
+
+
+
+  }
